@@ -6,7 +6,10 @@
     "start": "concurrently -n api,web -c blue,green \"npm:server\" \"npm:client\"",
     "server": "npm --prefix server run dev",
     "client": "npm --prefix client run dev",
-    "test": "npm --prefix server test"
+    "test": "npm --prefix server test",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": { "concurrently": "^8.2.2" }
 }
